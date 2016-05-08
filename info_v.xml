@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/iv_profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/f" />
+
+    <com.example.admin.sunflower.View.MyScrollView
+        android:id="@+id/sv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RelativeLayout
+                android:id="@+id/rl_profile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                    android:id="@+id/ll_profile_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical" />
+
+                <View
+                    android:id="@+id/v_profile_hearbottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/ll_profile_bg"
+                    android:layout_centerHorizontal="true"
+                    android:background="#FFFFFF"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_profile_avartar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignBottom="@+id/v_profile_hearbottom"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_profile_avatar" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_profile2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_profile1"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF" >
+                <TextView
+                    android:id="@+id/tv_profile_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="NAME"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <LinearLayout 
+                android:id="@+id/ge1"
+                android:layout_below="@+id/tv_profile_uname" 
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_marginLeft="15dip"  
+                android:layout_marginRight="15dip"  
+                android:layout_marginTop="16dip"  
+                android:gravity="center_vertical"  
+                android:orientation="horizontal"  
+                android:background="@drawable/more_item_press">  
+                <TextView   
+                     
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:textColor="#000000"  
+                    android:layout_marginLeft="15dip"  
+                    android:textSize="20sp"  
+                    android:text="性别:"/>  
+                <TextView   
+                    android:id="@+id/ss1"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_marginLeft="25dip"  
+                    android:text="男"  
+                    android:textColor="#000000"  
+                   android:textSize="20sp"  
+                      />  
+            </LinearLayout>  
+               
+     <LinearLayout 
+                android:id="@+id/ge2"
+                android:layout_below="@+id/ge1" 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="15dip"
+	    	     android:layout_marginRight="15dip"
+	    	    android:layout_marginTop="16dip"
+	    	     android:gravity="center_vertical"
+	    	    android:orientation="horizontal"
+	    	  
+	    	    android:background="@drawable/more_item_press">
+	         	<TextView 
+	         	   
+	         	    android:layout_width="wrap_content"
+	         	    android:layout_height="wrap_content"
+	         	    android:textColor="#000000"
+	         	    android:layout_marginLeft="15dip"
+	         	     android:textSize="20sp"
+	         	    android:text="手机:"/>
+	    	    <TextView 
+	    	        android:id="@+id/ss2"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_marginLeft="25dip"
+	    	        android:text="123456"
+	    	        android:textColor="#000000"
+	    	       android:textSize="20sp"
+	    	          />
+	    	</LinearLayout>
+   <LinearLayout 
+                android:id="@+id/ge3"
+                android:layout_below="@+id/ge2" 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="15dip"
+	    	     android:layout_marginRight="15dip"
+	    	    android:layout_marginTop="16dip"
+	    	     android:gravity="center_vertical"
+	    	    android:orientation="horizontal"
+	    	  
+	    	    android:background="@drawable/more_item_press">
+	         	<TextView 
+	         	   
+	         	    android:layout_width="wrap_content"
+	         	    android:layout_height="wrap_content"
+	         	    android:textColor="#000000"
+	         	    android:layout_marginLeft="15dip"
+	         	     android:textSize="20sp"
+	         	    android:text="邮箱:"/>
+	    	    <TextView 
+	    	        android:id="@+id/ss3"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_marginLeft="25dip"
+	    	        android:text="123456789@qq.com"
+	    	        android:textColor="#000000"
+	    	       android:textSize="20sp"
+	    	          />
+	    	</LinearLayout>
+     <LinearLayout 
+                 android:id="@+id/ge4"
+                 android:layout_below="@+id/ge3" 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="15dip"
+	    	     android:layout_marginRight="15dip"
+	    	    android:layout_marginTop="16dip"
+	    	     android:gravity="center_vertical"
+	    	    android:orientation="horizontal"
+	    	  
+	    	    android:background="@drawable/more_item_press">
+	         	<TextView 
+	         	   
+	         	    android:layout_width="wrap_content"
+	         	    android:layout_height="wrap_content"
+	         	    android:textColor="#000000"
+	         	    android:layout_marginLeft="15dip"
+	         	     android:textSize="20sp"
+	         	    android:text="个人简介:"/>
+	    	    <TextView 
+	    	        android:id="@+id/ss4"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_marginLeft="25dip"
+	    	        android:text=""
+	    	        android:textColor="#000000"
+	    	       android:textSize="20sp"
+	    	          />
+	    	</LinearLayout>
+	    	 <LinearLayout 
+                 android:id="@+id/ge5"
+                 android:layout_below="@+id/ge4" 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="15dip"
+	    	     android:layout_marginRight="15dip"
+	    	    android:layout_marginTop="16dip"
+	    	     android:gravity="center_vertical"
+	    	    android:orientation="horizontal"
+	    	    android:background="@drawable/more_item_press">
+	         	<TextView 
+	         	   
+	         	    android:layout_width="wrap_content"
+	         	    android:layout_height="wrap_content"
+	         	    android:textColor="#000000"
+	         	    android:layout_marginLeft="15dip"
+	         	     android:textSize="20sp"
+	         	    android:text="参加过的活动:"/>
+	    	    <TextView 
+	    	        android:id="@+id/ss5"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_marginLeft="25dip"
+	    	        android:text=""
+	    	        android:textColor="#000000"
+	    	       android:textSize="20sp"
+	    	          />
+	    	</LinearLayout>
+       <Button
+                android:id="@+id/v_modify_button"
+                android:layout_below="@+id/ge5" 
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="20dip"
+	    	    android:layout_marginRight="20dip"
+	    	    android:layout_marginTop="16dip"
+	    	    android:gravity="center_vertical|center_horizontal"
+	    	    android:text="点击修改资料"
+	    	    android:textSize="18sp"
+	    	    android:background="#FFFF33"></Button>  
+
+            </RelativeLayout>
+        
+            <View 
+                android:layout_below="@+id/rl_profile2"
+                android:layout_width="wrap_content"
+                android:layout_height="800dp"
+                android:background="#FFFFFF" 
+                
+                />
+             
+            
+       </RelativeLayout>
+            
+       
+    </com.example.admin.sunflower.View.MyScrollView>
+    
+
+</RelativeLayout>
